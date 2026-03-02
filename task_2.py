@@ -10,7 +10,7 @@ result_a = []
 result_b = []
 result_c = []
 
-# Удвоенные нечётные числа
+# а) Удвоенные нечётные числа
 for num in numbers:
         if num % 2 == 0 and (num // 2) % 2 != 0:
             result_a.append(num)
@@ -19,3 +19,15 @@ if result_a:
     print(result_a)
 else:
     print("Таких чисел нет")
+
+# б) При делении на 7 дают остаток 1, 2 или 5
+for num in numbers:
+    if num % 7 in [1, 2, 5]:
+        result_b.append(num)
+
+print("б) Числа, которые при делении на 7 дают остаток 1, 2 или 5:")
+if result_b:
+    print(result_b)
+else:
+    print("Таких чисел нет")
+
