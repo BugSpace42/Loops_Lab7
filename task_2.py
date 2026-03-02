@@ -31,3 +31,16 @@ if result_b:
 else:
     print("Таких чисел нет")
 
+# в) Корни уравнения x² + 3q_i - 5 действительны и положительны
+for i, q in enumerate(numbers, 1):
+    c = 3 * q - 5
+    if c < 0:  # Действительные корни
+        sqrt_val = (-c) ** 0.5
+        if sqrt_val > 0:  # Положительные корни
+            result_c.append(q)
+
+print("в) Числа, для которых корни уравнения x² + 3q_i - 5 = 0 действительны и положительны:")
+if result_c:
+    print(result_c)
+else:
+    print("Таких чисел нет")
